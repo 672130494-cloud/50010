@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>柱塞泵动画</title>
+    <style>
+        /* 可选：设置视频容器样式，让视频自适应页面 */
+        .video-box {
+            width: 50%;
+            margin: 50px auto; /* 居中显示 */
+        }
+        video {
+            width: 50%; /* 视频宽度自适应容器，高度自动比例 */
+            border-radius: 8px; /* 可选：圆角 */
+        }
+    </style>
+</head>
+<body>
+    <div class="video-box">
+        <!-- 核心视频标签：src是视频相对路径，controls显示播放控件 -->
+        <video src="test.mp4" controls preload="metadata">
+            <!-- 降级提示：如果浏览器不支持video标签，显示这段文字 -->
+            你的浏览器不支持HTML5视频播放，请更换现代浏览器（Chrome/Edge/Firefox）。
+        </video>
+    </div>
+</body>
+</html>
